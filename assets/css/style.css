@@ -24,12 +24,14 @@ nav {
     position: relative;
 }
 
-label.logo {
-    color: white;
+.logo {
+    color: white; 
     font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
+    text-decoration: none; 
+    display: inline-block; 
 }
 
 nav ul {
@@ -76,6 +78,7 @@ nav ul li a {
 
 /* Responsive styles */
 @media (max-width: 904px) {
+    /* Navigation */
     .checkbtn {
         display: block;
     }
@@ -106,18 +109,19 @@ nav ul li a {
         left: 0;
     }
 
-    label.logo {
+    .logo {
         font-size: 28px;
         padding: 0 20px;
     }
 }
 
 @media (max-width: 768px) {
+    /* Navigation */
     nav ul {
         padding-top: 100px;
     }
 
-    label.logo {
+    .logo {
         font-size: 32px;
     }
 
@@ -128,7 +132,8 @@ nav ul li a {
 }
 
 @media (max-width: 480px) {
-    label.logo {
+    /* Navigation */
+    .logo {
         font-size: 36px;
         padding: 0 10px;
     }
