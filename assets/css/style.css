@@ -111,49 +111,46 @@ footer ul.social li a:hover {
     color: #1b9bff; 
 }
 
-/* General main styling */
-main {
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center the content vertically */
-    align-items: center; /* Center the content horizontally */
-    min-height: calc(100vh - 80px - 60px); /* Fill the space between nav and footer */
-    padding: 20px; /* Add breathing room */
-    background-color: #f4f4f4; /* Light background for contrast */
-    overflow: hidden; /* Prevent scrolling */
+  /* Intro section */
+  #intro {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    background: url(../images/background.jpg) no-repeat center center/cover;
+    background-size: cover; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
 }
 
-main.intro {
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center the text vertically */
-    align-items: center; /* Center the text horizontally */
-    height: 100vh; /* Full viewport height */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url("assets/images/background.jpg") no-repeat center center/cover; 
-    color: white;
-    text-align: center;
-    position: relative; /* Enable positioning for child elements */
+#cover-text {
+  min-height: 200px;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.2); 
+  font-size: 130%;
+  color: #ffffff;
+  border-radius: 10px; 
+  text-align: center; 
+  backdrop-filter: blur(5px);
 }
 
-/* Overlay text styling */
-main.intro .text-overlay {
-    max-width: 800px; /* Limit text width for readability */
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
-    border-radius: 10px; /* Optional rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for better contrast */
+#cover-text > h2, #cover-text > h3 {
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
 }
 
-main.intro .text-overlay h1 {
-    font-size: 3rem; /* Large headline */
-    font-weight: bold;
-    margin-bottom: 10px;
+#cover-text h2 {
+  font-size: 250%; 
+  margin-bottom: 15px;
 }
 
-main.intro .text-overlay p {
-    font-size: 1.5rem; /* Subtitle */
-    line-height: 1.6;
+#cover-text h3 {
+  font-size: 180%;
+  font-weight: 300; 
 }
 
 /* Responsive styles */
