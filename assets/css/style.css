@@ -76,6 +76,41 @@ nav ul li a {
     display: none;
 }
 
+/* Footer Styling */
+footer {
+    background-color: #0082e6; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul.social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    padding: 0;
+    margin: 0;
+}
+
+footer ul.social li {
+    display: inline-block;
+}
+
+footer ul.social li a {
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul.social li a:hover {
+    color: #1b9bff; 
+}
+
 /* Responsive styles */
 @media (max-width: 904px) {
     /* Navigation */
@@ -145,5 +180,10 @@ nav ul li a {
 
     nav ul li a {
         font-size: 18px;
+    }
+
+    /* Footer */
+    footer ul.social li a {
+        font-size: 20px;
     }
 }
